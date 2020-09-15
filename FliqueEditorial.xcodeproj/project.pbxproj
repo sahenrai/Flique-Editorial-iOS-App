@@ -3,20 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7280094264C5F4FDCDFDDB93 /* Pods_FliqueEditorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69C082677775B79EE18A762 /* Pods_FliqueEditorial.framework */; };
 		DC117C52250B09B500C996A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC117C51250B09B500C996A1 /* AppDelegate.swift */; };
 		DC117C54250B09B500C996A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC117C53250B09B500C996A1 /* SceneDelegate.swift */; };
 		DC117C56250B09B500C996A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC117C55250B09B500C996A1 /* ViewController.swift */; };
 		DC117C59250B09B500C996A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC117C57250B09B500C996A1 /* Main.storyboard */; };
 		DC117C5B250B09B700C996A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC117C5A250B09B700C996A1 /* Assets.xcassets */; };
 		DC117C5E250B09B700C996A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC117C5C250B09B700C996A1 /* LaunchScreen.storyboard */; };
+		DC46DF61250FEC1700AB464D /* mainFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46DF60250FEC1700AB464D /* mainFeed.swift */; };
+		DCD9780C2510157500F743CA /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9780B2510157500F743CA /* webView.swift */; };
+		DCD9780E2510184700F743CA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9780D2510184700F743CA /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC117C4E250B09B500C996A1 /* FliqueEditorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FliqueEditorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFB8CA00EE8511A2FD1799C /* Pods-FliqueEditorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FliqueEditorial.release.xcconfig"; path = "Target Support Files/Pods-FliqueEditorial/Pods-FliqueEditorial.release.xcconfig"; sourceTree = "<group>"; };
+		DC117C4E250B09B500C996A1 /* Flique Editorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flique Editorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC117C51250B09B500C996A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC117C53250B09B500C996A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC117C55250B09B500C996A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		DC117C5A250B09B700C996A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC117C5D250B09B700C996A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC117C5F250B09B700C996A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC46DF60250FEC1700AB464D /* mainFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainFeed.swift; sourceTree = "<group>"; };
+		DCD9780B2510157500F743CA /* webView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
+		DCD9780D2510184700F743CA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E69C082677775B79EE18A762 /* Pods_FliqueEditorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FliqueEditorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC420DBB911EA16490EB5DB /* Pods-FliqueEditorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FliqueEditorial.debug.xcconfig"; path = "Target Support Files/Pods-FliqueEditorial/Pods-FliqueEditorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +41,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD9780E2510184700F743CA /* WebKit.framework in Frameworks */,
+				7280094264C5F4FDCDFDDB93 /* Pods_FliqueEditorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A11A84ADCC0933C053E88D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDC420DBB911EA16490EB5DB /* Pods-FliqueEditorial.debug.xcconfig */,
+				5DFB8CA00EE8511A2FD1799C /* Pods-FliqueEditorial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D411A7A0DF6D34DD45702BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9780D2510184700F743CA /* WebKit.framework */,
+				E69C082677775B79EE18A762 /* Pods_FliqueEditorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC117C45250B09B500C996A1 = {
 			isa = PBXGroup;
 			children = (
 				DC117C50250B09B500C996A1 /* FliqueEditorial */,
 				DC117C4F250B09B500C996A1 /* Products */,
+				49A11A84ADCC0933C053E88D /* Pods */,
+				D411A7A0DF6D34DD45702BC3 /* Frameworks */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
 		};
 		DC117C4F250B09B500C996A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC117C4E250B09B500C996A1 /* FliqueEditorial.app */,
+				DC117C4E250B09B500C996A1 /* Flique Editorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +92,22 @@
 				DC117C51250B09B500C996A1 /* AppDelegate.swift */,
 				DC117C53250B09B500C996A1 /* SceneDelegate.swift */,
 				DC117C55250B09B500C996A1 /* ViewController.swift */,
+				DCD9780B2510157500F743CA /* webView.swift */,
 				DC117C57250B09B500C996A1 /* Main.storyboard */,
 				DC117C5A250B09B700C996A1 /* Assets.xcassets */,
+				DC46DF5F250FEBF600AB464D /* tables */,
 				DC117C5C250B09B700C996A1 /* LaunchScreen.storyboard */,
 				DC117C5F250B09B700C996A1 /* Info.plist */,
 			);
 			path = FliqueEditorial;
+			sourceTree = "<group>";
+		};
+		DC46DF5F250FEBF600AB464D /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				DC46DF60250FEC1700AB464D /* mainFeed.swift */,
+			);
+			path = tables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC117C62250B09B700C996A1 /* Build configuration list for PBXNativeTarget "FliqueEditorial" */;
 			buildPhases = (
+				015A5CC116D646F46AE18765 /* [CP] Check Pods Manifest.lock */,
 				DC117C4A250B09B500C996A1 /* Sources */,
 				DC117C4B250B09B500C996A1 /* Frameworks */,
 				DC117C4C250B09B500C996A1 /* Resources */,
+				6D9279D7D79CB73A00877EE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +129,7 @@
 			);
 			name = FliqueEditorial;
 			productName = FliqueEditorial;
-			productReference = DC117C4E250B09B500C996A1 /* FliqueEditorial.app */;
+			productReference = DC117C4E250B09B500C996A1 /* Flique Editorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,6 +178,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		015A5CC116D646F46AE18765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FliqueEditorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9279D7D79CB73A00877EE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FliqueEditorial/Pods-FliqueEditorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FliqueEditorial/Pods-FliqueEditorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FliqueEditorial/Pods-FliqueEditorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC117C4A250B09B500C996A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +227,9 @@
 			files = (
 				DC117C56250B09B500C996A1 /* ViewController.swift in Sources */,
 				DC117C52250B09B500C996A1 /* AppDelegate.swift in Sources */,
+				DCD9780C2510157500F743CA /* webView.swift in Sources */,
 				DC117C54250B09B500C996A1 /* SceneDelegate.swift in Sources */,
+				DC46DF61250FEC1700AB464D /* mainFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +371,7 @@
 		};
 		DC117C63250B09B700C996A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC420DBB911EA16490EB5DB /* Pods-FliqueEditorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainsstudios.FliqueEditorial;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flique Editorial";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +390,7 @@
 		};
 		DC117C64250B09B700C996A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFB8CA00EE8511A2FD1799C /* Pods-FliqueEditorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainsstudios.FliqueEditorial;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flique Editorial";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
